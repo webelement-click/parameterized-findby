@@ -36,9 +36,9 @@ public class MyPage extends PageObjectParameterized {
 
 What we see here:
 
-. We define locator using annotation `@FindByParameterized`
-. We can add our custom impmenetation of `IParameterProvider` as one of the values for annotation
-. We can use standard Selenium locators along with parameterized
+1. We define locator using annotation `@FindByParameterized`
+1. We can add our custom impmenetation of `IParameterProvider` as one of the values for annotation
+1. We can use standard Selenium locators along with parameterized
 
 Now in your test you need to set pu property values before the page has been created. Let's look at some test example which uses TestNG to manage the test lyfe-cycle.
 
@@ -65,6 +65,6 @@ public void testPage(String language, String btnLocator, String labelLocator){
 
 What we see here:
 
-. We use parameterization for testing localized application
-. We set the map of properties to parameter provider
-. We initialize the page using `WebDriver` however nothing stops you from building a page on top of `WebElement`
+1. We use parameterization for testing localized application
+1. We set the map of properties to parameter provider
+1. We initialize the page using `WebDriver` however nothing stops you from building a page on top of `WebElement`
