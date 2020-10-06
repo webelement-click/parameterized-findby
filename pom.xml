@@ -2,11 +2,25 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
     <modelVersion>4.0.0</modelVersion>
+
+    <name>${project.groupId}:${project.artifactId}</name>
+    <description>Parameterized locators in your page objects with Selenium</description>
+    <url>https://github.com/webelement-click/parameterized-findby</url>
 
     <groupId>click.webelement</groupId>
     <artifactId>parameterized-findby</artifactId>
     <version>1.0-SNAPSHOT</version>
+
+    <developers>
+        <developer>
+            <name>Alexey Razgulyaev</name>
+            <email>alexey@webelement.click</email>
+            <organization>WebElement.Click</organization>
+            <organizationUrl>http://webelement.click/en/welcome</organizationUrl>
+        </developer>
+    </developers>
 
     <dependencies>
         <dependency>
@@ -41,5 +55,17 @@
             </plugin>
         </plugins>
     </build>
+
+    <licenses>
+        <license>
+            <name>GNU General Public License v3.0</name>
+            <url>https://opensource.org/licenses/GPL-3.0</url>
+        </license>
+    </licenses>
+
+    <scm>
+        <connection>scm:git:git://github.com/webelement-click/parameterized-findby.git</connection>
+        <url>https://github.com/webelement-click/parameterized-findby/tree/main</url>
+    </scm>
 
 </project>
