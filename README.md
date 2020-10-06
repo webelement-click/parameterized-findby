@@ -8,6 +8,16 @@ The conception is that you define your locators as usual but place `{wec:paramet
 
 You provide the parameter name using the implementation of `IParameterProvider`. There is default implementation `DefaultParameterProvider` supplied that is thread-safe which allows you to safely use it in your prallelized tests.
 
+Add the following dependency to your project:
+
+```xml
+<dependency>
+  <groupId>click.webelement</groupId>
+  <artifactId>parameterized-findby</artifactId>
+  <version>1.0.0</version>
+</dependency>
+```
+
 The easiest way to create a page with parameterized locators is to derive your page from `PageObjectParameterized` like shown below:
 
 ```java
